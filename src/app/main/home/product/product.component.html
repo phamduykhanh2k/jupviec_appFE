@@ -1,0 +1,117 @@
+<div class="container" id="products">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2 text-center">
+            <div class="section-title">
+                <h3>Dịch vụ của chúng tôi</h3>
+                <p>
+                    Đặt dịch vụ đơn giản chưa đầy 30 giây <br>
+                    Chủ động quản lý thời gian và đánh giá chất lượng
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-6 text-center" *ngFor="let item of productList">
+            <div class="single-product-item">
+                <div class="product-image">
+                    <a class="d-block" routerLink="/details/{{item._id}}"><img src="{{item.image}}" alt=""></a>
+                </div>
+                <h4>{{item.name}}</h4>
+                <p class="product-price">{{item.price | currency: "VND"}} <span>Giá theo giờ</span> </p>
+                <p class="product-description">{{item.description}}</p>
+                <a (click)="singleAddToCart(item)" class="btn btn-main">Đặt dịch vụ</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="testimonail-section mt-150 mb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 text-center">
+                <div class="testimonial-sliders">
+                    <div class="single-testimonial-slider">
+                        <div class="client-avater">
+                            <img src="assets/img/avaters/avatar1.png" alt="">
+                        </div>
+                        <div class="client-meta">
+                            <h3>Phạm Duy Khánh <span>Local shop owner</span></h3>
+                            <p class="testimonial-body">
+                                " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto beatae
+                                vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus
+                                error sit voluptatem accusantium "
+                            </p>
+                            <div class="last-icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-testimonial-slider">
+                        <div class="client-avater">
+                            <img src="assets/img/avaters/avatar2.png" alt="">
+                        </div>
+                        <div class="client-meta">
+                            <h3>Giang Đức Huy <span>Local shop owner</span></h3>
+                            <p class="testimonial-body">
+                                " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto beatae
+                                vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus
+                                error sit voluptatem accusantium "
+                            </p>
+                            <div class="last-icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-testimonial-slider">
+                        <div class="client-avater">
+                            <img src="assets/img/avaters/avatar3.png" alt="">
+                        </div>
+                        <div class="client-meta">
+                            <h3>Cẩm Tú <span>Local shop owner</span></h3>
+                            <p class="testimonial-body">
+                                " Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto beatae
+                                vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus
+                                error sit voluptatem accusantium "
+                            </p>
+                            <div class="last-icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="abt-section mb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="abt-bg">
+                    <a href="https://www.youtube.com/watch?v=CEMf4Hh8x94" class="video-play-btn popup-youtube"><i
+                            class="fas fa-play"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="abt-text">
+                    <h2>Về <span class="orange-text">Maid</span></h2>
+                    <p>
+                        Maid là doanh nghiệp tiên phong trong việc ứng dụng công nghệ vào ngành giúp việc nhà ở Việt
+                        Nam.
+                        Chúng tôi cung cấp đa dịch vụ tiện ích như: dọn dẹp nhà, vệ sinh máy lạnh, đi chợ, … tại Đông
+                        Nam Á.
+                        Thông qua ứng dụng đặt lịch dành cho khách hàng Maid và ứng dụng nhận việc của cộng tác viên,
+                        khách hàng và cộng tác viên có thể chủ động đăng và nhận việc trực tiếp trên ứng dụng.
+                    </p>
+                    <a routerLink="/about" class="boxed-btn mt-4">Về chúng tôi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="shop-banner">
+    <app-shop-banner></app-shop-banner>
+</section>

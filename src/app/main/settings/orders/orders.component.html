@@ -1,0 +1,39 @@
+<div class="orders">
+    <h2 class="setting-title">Lịch sử giao dịch</h2>
+    <div class="container order-item" *ngFor="let item of orders">
+        <div class="row heading align-items-center">
+            <div class="col-10">
+                <p><strong>{{item._id}}</strong></p>
+                <span>{{item.createdAt}}</span>
+            </div>
+            <div class="col-2" *ngIf="item.status === 'Chờ xác nhận'">
+                <span class="order-status" style="color: orange;">Chờ xác nhận</span>
+            </div>
+            <div class="col-2" *ngIf="item.status === 'Đã xác nhận'">
+                <span class="order-status" style="color: green;">Đã xác nhận</span>
+            </div>
+        </div>
+        <div class="row py-3 body">
+            <div class="col-3">
+                <img src="{{item.products[0].image}}" alt="" width="200px">
+            </div>
+            <div class="col-6">
+                <p style="font-size: 1.2rem;"><strong>{{item.products[0].name}}</strong></p>
+                <p class="mt-2">Số giờ: {{item.timeWork}} tiếng</p>
+                <p>Ngày làm việc: {{item.dateWork}}</p>
+                <p>Giờ bắt đầu: {{item.timeStart}}</p>
+                <p>Giờ kết thúc: {{item.timeEnd}}</p>
+            </div>
+            <div class="col-3">
+                <p style="font-size: 1.2rem;"><strong>Nhân viên</strong></p>
+                <p>Nhân viên: Giang Đức Huy</p>
+                <span>Điểm đánh giá: </span>
+                <span class="badge badge-pill badge-warning">10đ</span><br>
+                <a class="btn btn-rating btn-primary" href="">Đánh giá nhân viên</a>
+            </div>
+        </div>
+        <div class="row footer">
+            <p>Tổng đơn hàng: 160.000đ</p>
+        </div>
+    </div>
+</div>

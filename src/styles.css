@@ -1,0 +1,384 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 99999;
+}
+
+.active {
+    color: #F28123 !important;
+}
+
+.error-msg {
+    color: red;
+}
+
+.btn-main {
+    background-color: #4B8DB4 !important;
+    padding: 10px 20px !important;
+    color: white !important;
+    font-size: 1.2rem !important;
+}
+
+.btn-main:hover {
+    opacity: 0.8;
+}
+
+.menu-btns a {
+    padding: 5px 0;
+    color: white;
+    font-size: 1rem;
+}
+
+.login-area,
+.register-area {
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    position: relative;
+    width: 35em;
+    padding: 30px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.form-close {
+    position: absolute;
+    top: -2px;
+    right: 5px;
+    font-size: 1.4em;
+}
+
+.form-close:hover i {
+    color: var(--link-active-color);
+}
+
+.form-close i {
+    color: black;
+}
+
+.form-title {
+    font-size: 1.8em;
+    text-align: center;
+    color: #007bff;
+}
+
+.form-title.activebutton {
+    color: var(--link-active-color);
+}
+
+.social-item {
+    font-size: 1.2em;
+}
+
+.auth-toggle-link {
+    color: #007bff !important;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-quantity {
+    font-size: 1rem;
+    padding: 2px 6px;
+    color: white;
+    background-color: blue;
+    border-radius: 999999px;
+    position: absolute;
+    top: -12px;
+    left: 10px;
+}
+
+.product-remove i {
+    cursor: pointer;
+}
+
+.single-product-form .quantity {
+    width: 5rem;
+    text-align: center;
+}
+
+.single-product-form .btn-quantity {
+    font-size: 1.5rem;
+}
+
+.manager-title {
+    font-size: 1.8rem;
+}
+
+.nav-manager a,
+.nav-manager span {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.nav-manager a {
+    padding: 10px;
+}
+
+.add-area {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.operation-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+
+.manager-input::-webkit-outer-spin-button,
+.manager-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.admin-btn {
+    color: white !important;
+    font-size: 0.9rem !important;
+    padding: 10px 0 !important;
+}
+
+.byproduct_title {
+    color: black;
+    font-weight: 600;
+}
+
+.menu-info {
+    color: white;
+    padding: 5px 10px;
+    background-color: #8ec642;
+    border-radius: 99999999px;
+}
+
+.setting-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.badge-role {
+    font-size: 1rem;
+}
+
+.nav-left {
+    border-right: 1px solid #ccc;
+}
+
+.nav-left-item {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.nav-left-item:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.account input {
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 99999px;
+}
+
+.account input:focus-visible {
+    border: 2px #007bff solid;
+    outline: none;
+}
+
+.account-item {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.account label {
+    font-size: 1.2rem;
+}
+
+.account-btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+.order-item {
+    margin-top: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.order-item .heading {
+    background-color: #007bff;
+    padding: 10px 0;
+}
+
+.order-item .heading p,
+.order-item .heading span {
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.status {
+    color: green !important;
+    font-weight: 600;
+    font-size: 1.1rem !important;
+    background-color: white;
+    padding: 8px 18px;
+    border-radius: 999999px;
+}
+
+.order-item .body {
+    background-color: white;
+}
+
+.order-item .body p,
+.order-item .body span {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.btn-rating {
+    margin-top: 20px;
+    font-size: 1rem;
+    border-radius: 9999px;
+}
+
+.order-item .footer {
+    justify-content: end;
+    background-color: #ccc;
+    padding: 5px 10px;
+}
+
+.order-item .footer p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.order-details p {
+    font-size: 1.2rem;
+}
+
+.order-details table {
+    text-align: center;
+}
+
+.staff p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.staff .bxh {
+    border-left: 1px solid #ccc;
+}
+
+.staff .bxh img {
+    border-radius: 99999px;
+}
+
+.staff .bxh p {
+    font-size: 1.1rem;
+}
+
+.staff .bxh .bxh-item {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+}
+
+.staff-info {
+    margin: 0 300px;
+}
+
+.staff .staff-info p {
+    font-size: 1.2rem;
+}
+
+.staff .staff-info .info-item p {
+    font-weight: 600;
+}
+
+.staff .staff-info span {
+    font-size: 1.2rem;
+}
+
+
+
+.orders .order-item .order-status {
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-color: white;
+    padding: 8px 18px;
+    border-radius: 999999px;
+}
+
+.title-word {
+    animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+}
+
+.title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    32% {
+        color: var(--color-1)
+    }
+
+    33% {
+        color: var(--color-2)
+    }
+
+    65% {
+        color: var(--color-2)
+    }
+
+    66% {
+        color: var(--color-3)
+    }
+
+    99% {
+        color: var(--color-3)
+    }
+
+    100% {
+        color: var(--color-1)
+    }
+}
